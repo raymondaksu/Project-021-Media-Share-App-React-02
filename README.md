@@ -1,4 +1,4 @@
-##.env file
+## .env file
 
 ```
 REACT_APP_API_KEY=
