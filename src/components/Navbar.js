@@ -76,7 +76,7 @@ export default function Navbar() {
             <HomeIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            React Share
+            Media Share
           </Typography>
           {currentUser ? (
             <div>
@@ -112,8 +112,8 @@ export default function Navbar() {
             </div>
           ) : (
             <>
-              <MenuItem onClick={handleLoginClick}>Sign in</MenuItem>
-              <MenuItem onClick={handleRegisterClick}>Sign up</MenuItem>
+              <MenuItem onClick={handleLoginClick}>Sign In</MenuItem>
+              <MenuItem onClick={handleRegisterClick}>Sign Up</MenuItem>
             </>
           )}
         </Toolbar>

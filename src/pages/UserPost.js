@@ -3,14 +3,13 @@ import { useParams } from "react-router-dom";
 import { fetchData } from "../helper/FetchData";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Container, CircularProgress } from "@material-ui/core";
-import Typography from "@material-ui/core/Typography";
 import { formatDateFunc } from "../helper/FormatDate";
 import UserPostCard from "../components/UserPostCard";
-import { PostAdd } from "@material-ui/icons";
+
 
 const stylesFunc = makeStyles((theme) => ({
   wrapper: {
-    marginTop: "10rem",
+    marginTop: "2rem",
     minHeight: "calc(100vh - 19.0625rem)",
     textAlign: "center",
   },

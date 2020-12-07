@@ -17,7 +17,7 @@ const stylesFunc = makeStyles((theme) => ({
   wrapper:{
     display: 'flex',
     margin: 'auto',
-    height: "calc(100vh - 19.0625rem)",
+    height: "calc(112vh - 19.0625rem)",
   },
   root: {
     display: 'flex',
@@ -25,20 +25,20 @@ const stylesFunc = makeStyles((theme) => ({
     height: "calc(100vh - 19.0625rem)",
     backgroundColor: theme.palette.action.selected,
     width: '95%',
-    maxWidth: 850,
+    maxWidth: 550,
     margin: 'auto',
   },
   details: {
     display: 'flex',
     flexDirection: 'column',
-
+    width: '75%',
   },
   content: {
     flex: '1 0 auto',
   },
   cover: {
     width: '80%',
-    maxWidth: 600,
+    maxWidth: 500,
     height: '100%',
   },
   circular: {

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import clsx from "clsx";
 import Card from "@material-ui/core/Card";
+import Box from "@material-ui/core/Box";
 import CardHeader from "@material-ui/core/CardHeader";
 import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
@@ -21,6 +22,8 @@ import PropTypes from "prop-types";
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
+    minHeight: 400,
+    marginBottom: 15,
   },
   media: {
     height: 0,
@@ -84,7 +87,7 @@ export default function UserPostCard({
       <CardMedia className={classes.media} image={imgSrc} title={imgTitle} />
       <CardContent>
         <Typography variant="body2" color="textSecondary" component="p">
-          {description}
+            {description}
         </Typography>
       </CardContent>
       <CardActions disableSpacing>
@@ -113,11 +116,24 @@ export default function UserPostCard({
             comments.map((comment) => {
               return (
                 <React.Fragment key={comment.id}>
-                  <Typography variant="body2">
-                    {comment.owner.firstName}
-                  </Typography>
-                  <Typography paragraph>{comment.message}</Typography>
-                  <hr />
+                  <Box
+                    component="div"
+                    style={{
+                      backgroundColor: "#e2e2e2",
+                      paddingTop: 4,
+                      paddingBottom: 1,
+                      marginBottom: 3,
+                      borderRadius: 10,
+                    }}
+                  >
+                    <Typography
+                      variant="body2"
+                      style={{ fontWeight: "bold", fontStyle: "italic" }}
+                    >
+                      {comment.owner.firstName}
+                    </Typography>
+                    <Typography paragraph>{comment.message}</Typography>
+                  </Box>
                 </React.Fragment>
               );
             })

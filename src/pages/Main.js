@@ -49,7 +49,6 @@ function Main() {
   return (
     <Container className={mainStyles.wrapper}>
       {!userList ? (
-        //TODO: center loading icon
         <CircularProgress className={mainStyles.circular}/>
       ) : (
         <Grid container spacing={1}>
