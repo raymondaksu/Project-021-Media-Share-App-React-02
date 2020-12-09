@@ -19,8 +19,7 @@ function Copyright() {
 
 const useStyles = makeStyles((theme) => ({
   main: {
-    marginTop: theme.spacing(8),
-    marginBottom: theme.spacing(2),
+    marginTop: theme.spacing(10),
     textAlign:'center'
 
   },

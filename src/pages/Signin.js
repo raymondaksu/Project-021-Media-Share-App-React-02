@@ -22,8 +22,8 @@ const signInValidationSchema = Yup.object().shape({
 
 const stylesFunc = makeStyles((theme) => ({
   wrapper: {
-    marginTop: "5rem",
-    height: "calc(100vh - 19.0625rem)",
+    marginTop: "2rem",
+    height: "calc(107vh - 19.0625rem)",
     textAlign: "center",
   },
   avatar: {
@@ -33,6 +33,17 @@ const stylesFunc = makeStyles((theme) => ({
   signIn: {
     margin: "1rem",
   },
+  input: {
+    backgroundColor: 'white',
+  '& > .MuiFormHelperText-contained': {
+    backgroundColor: "#e6fcff",
+    marginTop: 0,
+    marginRight: 0,
+    marginLeft: 0,
+    paddingLeft: 10,
+    paddingTop: 5,
+  },
+},
 }));
 
 const initialValues = {
@@ -86,6 +97,7 @@ function Signin() {
                   onChange={handleChange}
                   error={errors.email}
                   helperText={errors.email}
+                  className={signinStyles.input}
                 />
               </Grid>
               <Grid item xs={12}>
@@ -99,6 +111,7 @@ function Signin() {
                   onChange={handleChange}
                   error={errors.password}
                   helperText={errors.password}
+                  className={signinStyles.input}
                 />
               </Grid>
               <Grid item xs={12}>

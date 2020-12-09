@@ -20,7 +20,7 @@ const forgotPasswordValidationSchema = Yup.object().shape({
 const stylesFunc = makeStyles((theme) => ({
   wrapper: {
     marginTop: "10rem",
-    height: "calc(100vh - 19.0625rem)",
+    height: "calc(89vh - 19.0625rem)",
     textAlign: "center",
   },
   avatar: {
@@ -30,6 +30,17 @@ const stylesFunc = makeStyles((theme) => ({
   forgotPassword: {
     margin: "1rem",
   },
+  input: {
+    backgroundColor: 'white',
+  '& > .MuiFormHelperText-contained': {
+    backgroundColor: "#e6fcff",
+    marginTop: 0,
+    marginRight: 0,
+    marginLeft: 0,
+    paddingLeft: 10,
+    paddingTop: 5,
+  },
+},
 }));
 
 const initialValues = {
@@ -70,6 +81,7 @@ function ForgotPassword() {
                   onChange={handleChange}
                   error={errors.email}
                   helperText={errors.email}
+                  className={forgotPasswordStyles.input}
                 />
               </Grid>
 

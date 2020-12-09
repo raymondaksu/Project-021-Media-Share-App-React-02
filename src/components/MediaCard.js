@@ -15,7 +15,6 @@ const useStyles = makeStyles({
   root: {
     maxWidth: 300,
     margin: "auto",
-    //marginRight:'10px',
     marginBottom: "30px",
     transition: "0.3s",
     boxShadow: "0 8px 40px -12px rgba(0,0,0,0.5)",

@@ -23,8 +23,8 @@ const signUpValidationSchema = Yup.object().shape({
 
 const stylesFunc = makeStyles((theme) => ({
   wrapper: {
-    marginTop: "5rem",
-    height: "calc(115vh - 19.0625rem)",
+    marginTop: "2rem",
+    height: "calc(119vh - 19.0625rem)",
     textAlign: "center",
   },
   avatar: {
@@ -34,6 +34,17 @@ const stylesFunc = makeStyles((theme) => ({
   signUp: {
     margin: "1rem",
   },
+  input: {
+    backgroundColor: 'white',
+  '& > .MuiFormHelperText-contained': {
+    backgroundColor: "#e6fcff",
+    marginTop: 0,
+    marginRight: 0,
+    marginLeft: 0,
+    paddingLeft: 10,
+    paddingTop: 5,
+  },
+},
 }));
 
 function Signup() {
@@ -76,6 +87,7 @@ function Signup() {
               helperText={
                 formik.touched.displayName && formik.errors.displayName
               }
+              className={signupStyles.input}
             />
           </Grid>
           <Grid item xs={12}>
@@ -87,6 +99,7 @@ function Signup() {
               {...formik.getFieldProps("email")}
               error={formik.touched.email && formik.errors.email}
               helperText={formik.touched.email && formik.errors.email}
+              className={signupStyles.input}
             />
           </Grid>
           <Grid item xs={12}>
@@ -99,6 +112,7 @@ function Signup() {
               {...formik.getFieldProps("password")}
               error={formik.touched.password && formik.errors.password}
               helperText={formik.touched.password && formik.errors.password}
+              className={signupStyles.input}
             />
           </Grid>
           <Grid item xs={12}>
