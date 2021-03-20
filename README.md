@@ -19,7 +19,7 @@
 - [Features](#features)
 - [How to use](#how-to-use)
 - [Acknowledgements](#acknowledgements)
-- [.env file](#.env file)
+- [.env file](#.env-file)
 - [Contact](#contact)
 
 <!-- OVERVIEW -->
