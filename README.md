@@ -26,7 +26,7 @@
 
 ## Overview
 
-<img src="mediaShare.gif" width="500">
+<img src="mediaShare.gif" width="700">
 
 ### Built With
 
