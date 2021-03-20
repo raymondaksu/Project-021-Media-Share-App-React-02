@@ -26,7 +26,7 @@
 
 ## Overview
 
-<img src="MovieSearchApp.gif" height="500">
+<img src="mediaShare.gif" height="500">
 
 ### Built With
 
